@@ -2,7 +2,7 @@ import Reveal from "./Reveal.jsx";
 
 export default function Experience() {
   return (
-    <section id="experience">
+    <section id="experience" className="page-section">
       <div className="wrap">
         <Reveal className="section-head">
           <div>

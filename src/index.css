@@ -286,6 +286,14 @@ section {
   color: var(--text);
 }
 
+.nav-links a.active {
+  color: var(--accent);
+}
+
+.nav-links a.active .index {
+  color: var(--accent);
+}
+
 .nav-links .index {
   color: var(--text-faint);
   margin-right: 6px;
@@ -338,6 +346,66 @@ section {
   .nav-actions .btn-ghost {
     display: none;
   }
+}
+
+/* =========================================================
+   Page sections (multi-page layout)
+   Each route is a standalone page, not a stacked scroll section, so it
+   gets its own top spacing to clear the fixed navbar instead of the
+   scroll-divider border used when everything lived on one long page.
+   ========================================================= */
+.page-section {
+  border-top: none;
+  padding-top: 152px;
+}
+
+@media (max-width: 720px) {
+  .page-section {
+    padding-top: 120px;
+  }
+}
+
+/* Used when a section follows another one on the same page (e.g.
+   Certifications directly under Skills) so it doesn't double up on the
+   navbar-clearance padding. */
+.page-section-tight {
+  padding-top: 0;
+}
+
+/* =========================================================
+   Profile chip (photo + name, shown on the Home page)
+   ========================================================= */
+.profile-chip {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-dim);
+  flex-shrink: 0;
+}
+
+.profile-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.profile-role {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-faint);
+  margin-top: 2px;
 }
 
 /* =========================================================

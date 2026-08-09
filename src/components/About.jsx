@@ -2,7 +2,7 @@ import Reveal from "./Reveal.jsx";
 
 export default function About() {
   return (
-    <section id="about">
+    <section id="about" className="page-section about">
       <div className="wrap">
         <Reveal className="about-copy">
           <div className="eyebrow">About</div>

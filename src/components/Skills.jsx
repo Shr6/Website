@@ -25,7 +25,7 @@ const SKILLS = [
 
 export default function Skills() {
   return (
-    <section id="skills">
+    <section id="skills" className="page-section">
       <div className="wrap">
         <Reveal className="section-head">
           <div>

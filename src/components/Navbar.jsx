@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
+import { RouterLink, useRouter } from "../router.jsx";
 
 const LINKS = [
-  { id: "about", label: "About", index: "01" },
-  { id: "experience", label: "Experience", index: "02" },
-  { id: "projects", label: "Projects", index: "03" },
-  { id: "skills", label: "Skills", index: "04" },
-  { id: "contact", label: "Contact", index: "05" },
+  { to: "/about", label: "About", index: "01" },
+  { to: "/experience", label: "Experience", index: "02" },
+  { to: "/projects", label: "Projects", index: "03" },
+  { to: "/skills", label: "Skills", index: "04" },
+  { to: "/contact", label: "Contact", index: "05" },
 ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { path } = useRouter();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -19,22 +21,30 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleLinkClick = () => setOpen(false);
+  // Close the mobile menu automatically whenever the route changes.
+  useEffect(() => {
+    setOpen(false);
+  }, [path]);
 
   return (
     <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="wrap">
-        <a href="#top" className="brand">
+        <RouterLink to="/" className="brand">
           <span className="dot" aria-hidden="true" />
           shrijan<span style={{ color: "var(--text-faint)" }}>.pokharel</span>
-        </a>
+        </RouterLink>
 
         <nav className={`nav-links ${open ? "open" : ""}`} aria-label="Primary">
           {LINKS.map((l) => (
-            <a key={l.id} href={`#${l.id}`} onClick={handleLinkClick}>
+            <RouterLink
+              key={l.to}
+              to={l.to}
+              aria-current={path === l.to ? "page" : undefined}
+              className={path === l.to ? "active" : undefined}
+            >
               <span className="index">{l.index}</span>
               {l.label}
-            </a>
+            </RouterLink>
           ))}
         </nav>
 

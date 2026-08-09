@@ -38,6 +38,20 @@
     </noscript>
 
     <title>Shrijan Pokharel — Programmer &amp; Cybersecurity Specialist</title>
+
+    <script>
+      // Second half of the GitHub Pages SPA redirect trick (see
+      // public/404.html): if we arrived here via a redirected deep link,
+      // restore the real URL before the app mounts, so React starts on
+      // the correct page instead of always rendering the home route.
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var redirect = params.get("__redirect");
+        if (redirect) {
+          window.history.replaceState({}, "", redirect);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

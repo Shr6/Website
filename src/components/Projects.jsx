@@ -5,7 +5,7 @@ const PROJECTS = [
     index: "01",
     name: "Loksewa Buddy Prep",
     desc:
-      "An exam-prep platform for Nepal's Loksewa civil service exams — built as a modern single-page app with a component-driven UI, deployed on Cloudflare via Wrangler.",
+      "An exam-prep platform built for students studying for Nepal's Loksewa civil service exams. Structured as a modern, component-driven single-page app so study material, question sets and progress feel fast and app-like rather than a static study site, and shipped straight to the edge on Cloudflare via Wrangler for quick global load times.",
     tags: ["React", "TypeScript", "Vite", "Cloudflare"],
     link: "https://github.com/Shr6/loksewa-buddy-prep",
   },
@@ -13,7 +13,7 @@ const PROJECTS = [
     index: "02",
     name: "IoT Flood Detection System",
     desc:
-      "An Arduino-powered flood monitoring system with a Flask backend, live Tailwind CSS dashboard, historical data logging and CSV export for disaster-preparedness reporting.",
+      "A hackathon-built disaster-preparedness tool that pairs an Arduino sensor rig with a Flask backend to monitor water levels in real time. A live Tailwind CSS dashboard visualizes the incoming readings, while historical logging and CSV export let responders review trends and generate reports after the fact.",
     tags: ["Arduino", "Flask", "Tailwind CSS", "Chart.js"],
     link: "https://github.com/Shr6/hackathon",
   },
@@ -21,7 +21,7 @@ const PROJECTS = [
     index: "03",
     name: "AI Traffic Signal Simulator",
     desc:
-      "A multi-lane traffic junction simulator where an adaptive AI controller scores each direction by queue length and wait time to switch signal phases and cut congestion.",
+      "A multi-lane traffic junction simulation with an adaptive AI controller at its core: it scores each approach by queue length and wait time to decide when to switch signal phases, rather than relying on a fixed timer, and includes a live HUD showing the agent's perception and decisions as it reduces congestion in real time.",
     tags: ["Python", "Pygame", "Simulation"],
     link: "https://github.com/Shr6/AI-traffic-signal",
   },
@@ -29,7 +29,7 @@ const PROJECTS = [
 
 export default function Projects() {
   return (
-    <section id="projects">
+    <section id="projects" className="page-section">
       <div className="wrap">
         <Reveal className="section-head">
           <div>

@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import { RouterLink } from "../router.jsx";
+import profilePhoto from "../assets/profile.jpg";
 
 const COMMANDS = [
   {
@@ -115,6 +117,20 @@ export default function Hero() {
       <div className="grid-field" aria-hidden="true" />
       <div className="wrap">
         <div>
+          <div className="profile-chip">
+            <img
+              src={profilePhoto}
+              alt="Shrijan Pokharel"
+              className="avatar"
+              width="64"
+              height="64"
+            />
+            <div>
+              <div className="profile-name">Shrijan Pokharel</div>
+              <div className="profile-role">Cybersecurity Specialist &amp; Programmer</div>
+            </div>
+          </div>
+
           <div className="hero-kicker">
             <span className="pulse" aria-hidden="true" />
             AVAILABLE FOR INTERNSHIPS &amp; FREELANCE WORK
@@ -134,12 +150,12 @@ export default function Hero() {
           </p>
 
           <div className="hero-actions">
-            <a className="btn btn-primary" href="#projects">
+            <RouterLink className="btn btn-primary" to="/projects">
               View projects →
-            </a>
-            <a className="btn btn-ghost" href="#contact">
+            </RouterLink>
+            <RouterLink className="btn btn-ghost" to="/contact">
               Get in touch
-            </a>
+            </RouterLink>
           </div>
 
           <div className="hero-meta">

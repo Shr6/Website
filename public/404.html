@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shrijan Pokharel — Redirecting…</title>
+    <!--
+      GitHub Pages only serves static files, so a direct visit or refresh
+      on a route like /projects has no matching file and 404s. This is the
+      well-known "spa-github-pages" trick: GitHub Pages serves THIS file
+      for any unknown path, and it encodes that path into a query string
+      and redirects to index.html, which decodes it back (see the inline
+      script at the top of index.html) before the app mounts — so the
+      right page renders instead of the home page.
+    -->
+    <script>
+      var path = window.location.pathname + window.location.search + window.location.hash;
+      window.location.replace(
+        window.location.origin + "/?__redirect=" + encodeURIComponent(path)
+      );
+    </script>
+  </head>
+  <body>
+    <p>Redirecting…</p>
+  </body>
+</html>

@@ -17,7 +17,7 @@ const CERTS = [
 
 export default function Certifications() {
   return (
-    <section id="certifications">
+    <section id="certifications" className="page-section page-section-tight">
       <div className="wrap">
         <Reveal className="section-head">
           <div>
