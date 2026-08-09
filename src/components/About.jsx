@@ -25,9 +25,10 @@ export default function About() {
           </p>
         </Reveal>
 
-        <Reveal delay={120}>
+        <Reveal delay={120} className="fact-grid-wrap">
           <div className="fact-grid">
             <div className="fact">
+
               <div className="label">Location</div>
               <div className="value">Bhaktapur, Nepal</div>
             </div>

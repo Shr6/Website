@@ -623,6 +623,16 @@ section {
   font-weight: 600;
 }
 
+.fact-grid-wrap {
+  margin-top: 48px;
+}
+
+@media (max-width: 900px) {
+  .fact-grid-wrap {
+    margin-top: 0;
+  }
+}
+
 .fact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
