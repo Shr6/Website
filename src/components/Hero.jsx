@@ -122,8 +122,8 @@ export default function Hero() {
               src={profilePhoto}
               alt="Shrijan Pokharel"
               className="avatar"
-              width="64"
-              height="64"
+              width="88"
+              height="88"
             />
             <div>
               <div className="profile-name">Shrijan Pokharel</div>

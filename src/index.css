@@ -383,8 +383,8 @@ section {
 }
 
 .avatar {
-  width: 64px;
-  height: 64px;
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 30%;
@@ -624,7 +624,7 @@ section {
 }
 
 .fact-grid-wrap {
-  margin-top: 48px;
+  margin-top: 90px;
 }
 
 @media (max-width: 900px) {
