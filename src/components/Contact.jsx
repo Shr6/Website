@@ -20,8 +20,8 @@ export default function Contact() {
             </h2>
             <p className="contact-copy">
               Open to internships, freelance work and collaborations around
-              cybersecurity, AI tooling, and full-stack development. Reach out
-              — I usually reply within a day or two.
+              cybersecurity, AI tooling, and full-stack development. Reach out,
+             I usually reply within a day or two.
             </p>
             <div className="contact-actions">
               <a className="btn btn-primary" href={`mailto:${CONTACT.email}`}>
