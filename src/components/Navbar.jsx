@@ -30,8 +30,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="wrap">
         <RouterLink to="/" className="brand">
-          <span className="dot" aria-hidden="true" />
-          shrijan<span style={{ color: "var(--text-faint)" }}>.pokharel</span>
+          Shrijan<span style={{ color: "var(--text-faint)" }}>Pokharel</span>
         </RouterLink>
 
         <nav className={`nav-links ${open ? "open" : ""}`} aria-label="Primary">
