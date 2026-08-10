@@ -10,7 +10,7 @@ export default function Experience() {
             <h2 className="section-heading">Where I've worked and studied.</h2>
           </div>
           <p className="section-sub" style={{ marginTop: 0 }}>
-            Two years in the field so far — securing infrastructure by day,
+            Two years in the field so far, securing infrastructure by day,
             studying computer science and shipping side projects the rest of
             the time.
           </p>
@@ -51,7 +51,7 @@ export default function Experience() {
             </div>
             <p className="timeline-desc">
               Studying Computer Science &amp; Information Technology, with a
-              focus on security, software engineering, and applied AI —
+              focus on security, software engineering, and applied AI,
               alongside hands-on work as a security specialist.
             </p>
             <div className="tag-row">
