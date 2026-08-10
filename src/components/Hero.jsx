@@ -143,7 +143,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero-role">
-            I'm <span className="accent">Shrijan Pokharel</span> — a CSIT student, programmer
+            I'm <span className="accent">Shrijan Pokharel</span>; a CSIT student, programmer
             and Web3 enthusiast from Bhaktapur, Nepal. I work at the intersection of
             cybersecurity, AI and full-stack development, currently defending systems
             as a Junior Cyber Security Specialist at InteliATE.
