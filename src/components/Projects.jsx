@@ -38,7 +38,7 @@ export default function Projects() {
           </div>
           <p className="section-sub" style={{ marginTop: 0 }}>
             A mix of security-minded infrastructure, applied AI and full-stack
-            products — mostly born out of hackathons and self-directed builds.
+            products, mostly born out of hackathons and self-directed builds.
           </p>
         </Reveal>
 
