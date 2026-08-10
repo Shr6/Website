@@ -259,14 +259,6 @@ section {
   color: var(--text);
 }
 
-.brand .dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-dim);
-}
-
 .nav-links {
   display: flex;
   align-items: center;
