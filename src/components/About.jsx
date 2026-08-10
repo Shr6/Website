@@ -20,7 +20,7 @@ export default function About() {
             Day to day, that means everything from hardening infrastructure and
             tightening CI/CD pipelines to fixing bugs and improving overall cyber
             defense strategy. I also build custom AI models, and outside of work I
-            spend my time exploring Web3 and shipping small full-stack projects —
+            spend my time exploring Web3 and shipping small full-stack projects,
             from IoT flood-monitoring dashboards to AI traffic simulators.
           </p>
         </Reveal>
